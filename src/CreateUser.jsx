@@ -9,15 +9,15 @@ function CreateUser() {
     const [age,setAge]=useState()
     const navigate=useNavigate()
 
-    const handleclick=(e)=>{
-        e.preventDefault();
-        axios.post("http://localhost:3000/createUser", {name,email,age})
-        .then(result=>{console.log(result)
-            navigate('/')
-        })
-        .catch(err=>console.log(err))
+    // const handleclick=(e)=>{
+    //     e.preventDefault();
+    //     axios.post("http://localhost:3000/createUser", {name,email,age})
+    //     .then(result=>{console.log(result)
+    //         navigate('/')
+    //     })
+    //     .catch(err=>console.log(err))
 
-    }
+    // }
 
   return (
     <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
