@@ -13,7 +13,7 @@ function CreateUser() {
         e.preventDefault();
         axios.post("http://localhost:3000/createUser", {name,email,age})
         .then(result=>{console.log(result)
-            navigate('/')
+            navigate('/Moncurd')
         })
         .catch(err=>console.log(err))
 
